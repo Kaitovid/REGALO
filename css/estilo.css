@@ -1,0 +1,49 @@
+body {
+    background-image: url('/img/yin-yang-kuromi-and-melody-8herbxrfadgoszl1.jpg'); /* Ruta de la imagen */
+    background-size: cover; /* Ajusta la imagen para cubrir toda la pantalla */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    height: 100vh; /* Hace que el fondo ocupe toda la pantalla */
+    margin: 0; /* Elimina el margen por defecto */
+    background-attachment: fixed; /* Fija la imagen de fondo */
+    padding-top: 50px; /* Baja la imagen de fondo */
+    
+   
+}
+
+@keyframes estrellas {
+    0% { transform: translateY(0) rotate(0deg); opacity: 1; }
+    100% { transform: translateY(100vh) rotate(360deg); opacity: 0; }
+}
+
+.estrella {
+    position: fixed;
+    top: -10px;
+    left: calc(10% + 80% * var(--x));
+    width: 30px;
+    height: 30px;
+    background-color: hsl(calc(360 * var(--x)), 100%, 50%);
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    opacity: 0.9;
+    animation: estrellas linear infinite;
+    animation-duration: calc(5s + 5s * var(--d));
+}
+.mi-boton {
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 320%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.mi-boton:hover {
+    background-color: darkred;
+    justify-content: center; /* Centra horizontalmente */
+    
+}
+
+    

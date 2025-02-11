@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>regalo</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    
+</head>
+<style>
+    .contenedor {
+        display: flex; /* Activa Flexbox */
+        justify-content: center; /* Centra horizontalmente */
+        align-items: center; /* Alinea verticalmente */
+        gap: 0,3px; /* Espacio entre imágenes */
+        margin-top: 30px; /* Espacio arriba */
+    }
+    img {
+        width: 300px; /* Tamaño de las imágenes */
+        height: auto; /* Mantiene la proporción */
+    }
+    .contenedor2 {
+        display: flex; /* Activa Flexbox */
+        justify-content: center; /* Centra horizontalmente */
+        align-items: center; /* Alinea verticalmente */
+        gap: 0,3px; /* Espacio entre imágenes */
+        margin-top: 30px; /* Espacio arriba */
+    }
+
+    
+</style>   
+<body>
+    
+    <h1 style="color:rgb(31, 205, 220); text-align: center;">
+        ¡FELIZ DIA DEL AMOR Y LA AMISTAD PARA MI MEJOR AMIGA!
+        <br>TE QUIERO MUCHO AMIGA
+    </h1>
+    <script>
+        function crearEstrellas() {
+            for (let i = 0; i < 10; i++) { // Cantidad de estrellas
+                let estrella = document.createElement("div");
+                estrella.classList.add("estrella");
+                estrella.style.setProperty("--x", Math.random());
+                estrella.style.setProperty("--d", Math.random());
+                document.body.appendChild(estrella);
+                setTimeout(() => estrella.remove(), 10000); // Desaparece después de 10s
+            }
+        }
+        setInterval(crearEstrellas, 1000); // Crea nuevas estrellas cada 1s
+    </script>
+  
+
+    <div class="contenedor">
+        <img src="img/a1.jpeg" alt="">
+        <img src="img/a2.jpeg" alt="">
+    </div>
+    <h2 style="text-align: center; color: springgreen;">
+        una foto compartida por cada año que te conozco star :3
+    </h2>
+    <div class="contenedor2">
+        <img src="img/b1.jpeg" alt="">
+        <img src="img/b2.jpeg" alt="" style="width: 288px; height: auto;">
+    </div>
+    <h2 style="text-align: center; color: springgreen;">
+        Enserio gracias por ser mi amiga, te quiero mucho star :3
+    </h2>
+    <div class="contenedor">
+        <img src="img/c1.jpeg" alt="">
+        <img src="img/c2.jpeg" alt="">
+    </div>
+    <h2 style="text-align: center; color: springgreen;">
+        Y chinga tu madre si me dejas :3
+    </h2>
+    <div class="contenedor">
+        <img src="img/d1.jpeg" alt="">
+        <img src="img/d2.jpeg" alt="">
+    </div>
+    <h2 style="text-align: center; color: springgreen;">
+        Tambien agradezco al mundo por ponerte en mi camino eres 
+        <br> la merjor amiga que alguien puede tener :3
+    </h2>
+
+    <a href="https://www.youtube.com/watch?v=P2rUuv1EQhQ&pp=ygUwbG9zIGFtaWdvcyBzb24gYW1pZ29zIHBhcmEgc2llbXByZSB5IHBvciBzaWVtcHJl"target=_blank>  <button class="mi-boton">Haz clic aquí</button></a>
+
+    <div class="contenedor2">
+        <img src="img/star.jpeg" alt="mi mejor amiga"style="width: 242px; height: auto;">
+        <img src="img/kurumi.jpeg" alt="sus gustos" >
+    </div>
+</body>
+</html>
